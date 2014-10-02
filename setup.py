@@ -127,7 +127,7 @@ if sys.version_info < (2,4):
     build_ext.build_ext.swig_sources = swig_sources
 
 
-m2crypto = Extension(name = 'M2Crypto.__m2crypto',
+m2crypto = Extension(name = '__m2crypto',
                      sources = ['SWIG/_m2crypto.i'],
                      extra_compile_args = ['-DTHREADING'],
                      #extra_link_args = ['-Wl,-search_paths_first'], # Uncomment to build Universal Mac binaries
